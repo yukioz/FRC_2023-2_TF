@@ -88,3 +88,39 @@ Para descobrir o <IP_DO_SEU_SERVIDOR>, digite ip a na máquina que está rodando
 inet <IP_DO_SEU_SERVIDOR>/XX brd <MASCARA> scope global dynamic noprefixroute enp8s0
 ```
 Assim, mesmo usando outro ambiente de uma máquina virtual você poderá se conectar ao site.
+
+# para rodar a aplicação:
+
+depois de clonar o repositório, entre na pasta backend e rode:
+
+> $ app.py
+
+para iniciar o backend. em seguida entre a pasta "/wired-talks" e digite:
+
+> $ npm install
+> $ npm run build
+
+caso queira rodar localmente:
+
+> $ npm start
+
+faça a configuração do apache e DNS e pronto.
+
+basta acessar: http://www.frc-wiredtalks.com/chat
+
+usuários cadastrado:
+
+users = [
+  {
+    "nome": "lucas",
+    "email": "lucas@gmail.com",
+    "senha": "senha123"
+  },
+  {
+    "nome": "yukio",
+    "email": "yukio@gmail.com",
+    "senha": "senha123"
+  }
+]
+
+Link da apresentação: https://www.youtube.com/watch?v=AlWKyw_gEzg

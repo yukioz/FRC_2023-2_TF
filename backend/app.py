@@ -8,7 +8,8 @@ import json
 from database.data import users, rooms, messages
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+CORS(app)
+# CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}}) # caso precise
 app.config["SECRET_KEY"] = "segredo"
 socketio = SocketIO(app, cors_allowed_origins="*")
 
